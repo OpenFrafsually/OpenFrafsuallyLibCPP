@@ -8,13 +8,13 @@ double OpenFrafsuallyLib::FrameTimeCalculator::calculateSecondsPerFrame(double f
     return (1.0 / fps);
 }
 
-double OpenFrafsuallyLib::FrameTimeCalculator::calculateSecondsPerFrame(int64_t frames, double seconds) {
+double OpenFrafsuallyLib::FrameTimeCalculator::calculateSecondsPerFrame(int_least32_t frames, double seconds) {
     auto framesConversion = static_cast<double>(frames);
 
     return seconds / framesConversion;
 }
 
-double OpenFrafsuallyLib::FrameTimeCalculator::calculateFramesPerSecond(int64_t frames, double seconds) {
+double OpenFrafsuallyLib::FrameTimeCalculator::calculateFramesPerSecond(int_least32_t frames, double seconds) {
     auto framesConversion = static_cast<double>(frames);
 
     return framesConversion / seconds;

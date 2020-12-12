@@ -13,9 +13,9 @@ namespace OpenFrafsuallyLib{
 
     public:
         double calculateSecondsPerFrame(double fps);
-        double calculateSecondsPerFrame(int64_t frames, double seconds);
+        double calculateSecondsPerFrame(int_least32_t frames, double seconds);
 
-        double calculateFramesPerSecond(int64_t frames, double seconds);
+        double calculateFramesPerSecond(int_least32_t frames, double seconds);
 
         double calculateFramesPerSecondWithFrameTimes(double frametimes, double seconds);
 

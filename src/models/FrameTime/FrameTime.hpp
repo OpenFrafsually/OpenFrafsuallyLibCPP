@@ -6,7 +6,6 @@
 #define CPP_FRAMETIME_HPP
 
 #include <cmath>
-#include <iostream>
 
 #include "../../Calculators/FrameTimeCalculator/FrameTimeCalculator.hpp"
 
@@ -19,21 +18,33 @@ namespace OpenFrafsuallyLib{
     class FrameTime {
 
     public:
-        int_least64_t frameNumber{};
+        int_least32_t frameNumber;
 
-        double startTimeMilliseconds{};
-        double endTimeMilliseconds{};
+        double startTimeMilliseconds;
+        double endTimeMilliseconds;
 
-        double timeMilliseconds = abs(startTimeMilliseconds - endTimeMilliseconds);
+        FrameTime(){
+            frameNumber = 0;
 
-        double getFrameTimeMilliseconds();
+            startTimeMilliseconds = 0.0;
+            endTimeMilliseconds = 0.0;
+        }
+
+        double getTimeMilliseconds(){
+           return std::abs(startTimeMilliseconds - endTimeMilliseconds);
+        }
+
+        double getFrameTimeMilliseconds(){
+            double conversion = (getTimeMilliseconds() / 1000.0);
+
+            double fps = frameTimeCalculator.calculateFramesPerSecond(1, conversion / 1000.0);
+
+            return frameTimeCalculator.calculateFrameTimeMilliseconds(fps);
+        }
 
 
     protected:
         FrameTimeCalculator frameTimeCalculator;
-
-    private:
-
 
     };
 }
