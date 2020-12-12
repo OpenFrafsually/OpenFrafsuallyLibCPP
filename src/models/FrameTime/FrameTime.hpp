@@ -12,14 +12,17 @@
 
 using namespace std;
 
-namespace AluminiumTech::FrafsuallyLib{
+namespace OpenFrafsuallyLib{
+    /**
+     *
+     */
     class FrameTime {
 
     public:
-        int_least64_t frameNumber;
+        int_least64_t frameNumber{};
 
-        double startTimeMilliseconds;
-        double endTimeMilliseconds;
+        double startTimeMilliseconds{};
+        double endTimeMilliseconds{};
 
         double timeMilliseconds = abs(startTimeMilliseconds - endTimeMilliseconds);
 

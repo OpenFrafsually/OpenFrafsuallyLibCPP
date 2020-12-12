@@ -8,8 +8,7 @@
 
 #include <iostream>
 
-namespace AluminiumTech::FrafsuallyLib{
-
+namespace OpenFrafsuallyLib{
     class FrameTimeCalculator {
 
     public:

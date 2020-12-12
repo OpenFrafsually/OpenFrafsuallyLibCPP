@@ -4,8 +4,8 @@
 
 #include "AverageFrameRateCalculator.hpp"
 
-double AluminiumTech::FrafsuallyLib::AverageFrameRateCalculator::GetAverageFpsUsingGeometricMean(
-        AluminiumTech::FrafsuallyLib::FrameTime* frametimes) {
+double OpenFrafsuallyLib::AverageFrameRateCalculator::GetAverageFpsUsingGeometricMean(
+        OpenFrafsuallyLib::FrameTime* frametimes) {
     double average = 0.0;
 
     for(int index = 0; index < sizeof(frametimes)/sizeof(frametimes[0]); index++){
@@ -17,8 +17,8 @@ double AluminiumTech::FrafsuallyLib::AverageFrameRateCalculator::GetAverageFpsUs
    return pow(average, (1.0 / static_cast<double>(sizeof(frametimes)/sizeof(frametimes[0]))));
 }
 
-double AluminiumTech::FrafsuallyLib::AverageFrameRateCalculator::GetAverageFpsUsingArithmeticMean(
-        AluminiumTech::FrafsuallyLib::FrameTime* frametimes) {
+double OpenFrafsuallyLib::AverageFrameRateCalculator::GetAverageFpsUsingArithmeticMean(
+        OpenFrafsuallyLib::FrameTime* frametimes) {
     double average = 0.0;
 
     for(int index = 0; index < sizeof(frametimes)/sizeof(frametimes[0]); index++){
@@ -30,7 +30,7 @@ double AluminiumTech::FrafsuallyLib::AverageFrameRateCalculator::GetAverageFpsUs
     return average / static_cast<double>(sizeof(frametimes)/sizeof(frametimes[0]));
 }
 
-double AluminiumTech::FrafsuallyLib::AverageFrameRateCalculator::CalculatePercentile(double percentage, FrameTime* frametimes) {
+double OpenFrafsuallyLib::AverageFrameRateCalculator::CalculatePercentile(double percentage, FrameTime* frametimes) {
 
     if(!(percentage >= 0 && percentage <= 1.0) || (percentage >= 0 && percentage <= 100)){
         percentage = percentage / 100;

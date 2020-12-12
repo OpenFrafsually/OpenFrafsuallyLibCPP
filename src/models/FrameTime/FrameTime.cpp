@@ -4,7 +4,7 @@
 
 #include "FrameTime.hpp"
 
-double AluminiumTech::FrafsuallyLib::FrameTime::getFrameTimeMilliseconds() {
+double OpenFrafsuallyLib::FrameTime::getFrameTimeMilliseconds() {
     double conversion = (timeMilliseconds / 1000.0);
 
     double fps = frameTimeCalculator.calculateFramesPerSecond(1, conversion / 1000.0);

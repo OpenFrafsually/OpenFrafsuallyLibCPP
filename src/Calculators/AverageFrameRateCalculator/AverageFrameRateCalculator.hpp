@@ -8,7 +8,7 @@
 
 #include "../../models/FrameTime/FrameTime.hpp"
 
-namespace AluminiumTech::FrafsuallyLib{
+namespace OpenFrafsuallyLib{
     class AverageFrameRateCalculator {
 
     public:
