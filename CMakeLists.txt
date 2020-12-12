@@ -1,17 +1,19 @@
 cmake_minimum_required(VERSION 3.17)
-project(FrafsuallyLib)
+project(OpenFrafsuallyLib)
 
 set(CMAKE_CXX_STANDARD 20)
 
 add_library(cpp SHARED
-        logic/models/FrameTime/FrameTime.cpp
-        logic/models/FrameTime/FrameTime.hpp
+        src/models/FrameTime/FrameTime.cpp
+        src/models/FrameTime/FrameTime.hpp
 
-        logic/Calculators/FrameTimeCalculator/FrameTimeCalculator.cpp
-        logic/Calculators/FrameTimeCalculator/FrameTimeCalculator.hpp
+        src/Calculators/FrameTimeCalculator/FrameTimeCalculator.cpp
+        src/Calculators/FrameTimeCalculator/FrameTimeCalculator.hpp
 
-        logic/models/AverageFrameRate/AverageFrameRate.cpp
-        logic/models/AverageFrameRate/AverageFrameRate.hpp
+        src/Calculators/AverageFrameRateCalculator/AverageFrameRateCalculator.cpp
+        src/Calculators/AverageFrameRateCalculator/AverageFrameRateCalculator.hpp
 
-        logic/Calculators/AverageFrameRateCalculator/AverageFrameRateCalculator.cpp
-        logic/Calculators/AverageFrameRateCalculator/AverageFrameRateCalculator.hpp)
+        src/models/FrameTimes/FrameTimes.cpp
+        src/models/FrameTimes/FrameTimes.hpp)
+
+(..\\..\\/GitLab/developerkit/cpp)
