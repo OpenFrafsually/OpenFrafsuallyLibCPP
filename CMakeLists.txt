@@ -10,9 +10,6 @@ add_library(cpp SHARED
         src/Calculators/FrameTimeCalculator/FrameTimeCalculator.cpp
         src/Calculators/FrameTimeCalculator/FrameTimeCalculator.hpp
 
-        src/Calculators/AverageFrameRateCalculator/AverageFrameRateCalculator.cpp
-        src/Calculators/AverageFrameRateCalculator/AverageFrameRateCalculator.hpp
-
         src/models/FrameTimes/FrameTimes.cpp
         src/models/FrameTimes/FrameTimes.hpp)
 
