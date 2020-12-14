@@ -11,4 +11,4 @@ add_library(cpp SHARED
 
         src/models/FrameTimes/FrameTimes.hpp)
 
-add_subdirectory(developerkit/cpp)
+add_subdirectory(deps/developerkit/cpp)
