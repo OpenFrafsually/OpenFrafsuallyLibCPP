@@ -7,7 +7,7 @@
 
 #include <algorithm>
 
-#include "../FrameTime/FrameTime.hpp"
+#include "FrameTime.hpp"
 
 #include "../../../developerkit/cpp/src/Types/Lists/ObjectList.hpp"
 

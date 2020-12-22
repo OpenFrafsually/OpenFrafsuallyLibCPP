@@ -1,14 +1,14 @@
 cmake_minimum_required(VERSION 3.17)
-project(OpenFrafsuallyLib)
+project(OpenFrafsuallyLib VERSION 1.0.0)
 
 set(CMAKE_CXX_STANDARD 17)
 
 add_library(cpp SHARED
-        src/models/FrameTime/FrameTime.hpp
+        src/models/FrameTime.hpp
 
         src/Calculators/FrameTimeCalculator/FrameTimeCalculator.cpp
         src/Calculators/FrameTimeCalculator/FrameTimeCalculator.hpp
 
-        src/models/FrameTimes/FrameTimes.hpp)
+        src/models/FrameTimes.hpp)
 
 add_subdirectory(deps/developerkit/cpp)

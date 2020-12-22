@@ -7,7 +7,7 @@
 
 #include <cmath>
 
-#include "../../Calculators/FrameTimeCalculator/FrameTimeCalculator.hpp"
+#include "../Calculators/FrameTimeCalculator/FrameTimeCalculator.hpp"
 
 using namespace std;
 
