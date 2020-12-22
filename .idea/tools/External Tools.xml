@@ -1,9 +1,0 @@
-<toolSet name="External Tools">
-  <tool name="Emscripten" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="D:\emsdk\emcmdprompt.bat" />
-      <option name="PARAMETERS" value="emcc" />
-      <option name="WORKING_DIRECTORY" value="D:/GitHub/FrafsuallyLibCPP/src" />
-    </exec>
-  </tool>
-</toolSet>
