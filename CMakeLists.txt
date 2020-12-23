@@ -3,7 +3,7 @@ project(OpenFrafsuallyLib VERSION 1.0.0)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_library(cpp SHARED
+add_library(OpenFrafsuallyLib SHARED
         src/models/FrameTime.hpp
 
         src/Calculators/FrameTimeCalculator/FrameTimeCalculator.cpp
@@ -12,3 +12,7 @@ add_library(cpp SHARED
         src/models/FrameTimes.hpp)
 
 add_subdirectory(deps/developerkit/cpp)
+
+export(TARGETS OpenFrafsuallyLib
+        NAMESPACE ${PACKAGE_NAME}::
+        FILE OpenFrafsuallyLib.cmake)
